@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>TUM EduGrid</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+
+<!-- Begin Webpage Body -->
+
+<body>
+  <br /><br />
+
+  <!-- Static text -->
+
+  <label class="switch"><input value="Switch" type="checkbox" onclick="toggleSwitch(this)" id="1"><span
+      class="slider"></span></label>
+
+  <br /><br />
+
+  <h4>PWM </h4>
+  <div class="slidecontainer"> <input type="range" id="4" name="PWM DC" min="5" max="95" oninput="toggleSlider(this)"
+      onchange="toggleSlider(this)" class="range_slider"> </div> <br />
+
+
+  <br /><br />
+
+
+  <label class="headlabel"> VOLTAGE (SOLAR)</label>
+  <label class="headlabel"> </label>
+  <label class="headlabel"> CURRENT(SOLAR) </label>
+  <label class="headlabel"> </label>
+  <label class="headlabel"> POWER (SOLAR) </label><br />
+  <label class="normallabel" id="voltage_in_label">33.53 V</label>
+  <label class="normallabel">&#x2022;</label>
+  <label class="normallabel" id="current_in_label">4.85 A</label>
+  <label class="normallabel">=</label>
+  <label class="normallabel" id="power_in_label">322.67 W</label><br />
+
+  <br /><br />
+
+  <label class="headlabel"> VOLTAGE (LOAD) </label>
+  <label class="headlabel"> </label>
+  <label class="headlabel"> CURRENT(LOAD) </label>
+  <label class="headlabel"> </label>
+  <label class="headlabel"> POWER (LOAD) </label><br />
+  <label class="normallabel" id="voltage_out_label">18.12 V</label>
+  <label class="normallabel">&#x2022;</label>
+  <label class="normallabel" id="current_out_label">16.74 A</label>
+  <label class="normallabel">=</label>
+  <label class="normallabel" id="power_out_label">303.31 W</label><br />
+
+  <br /><br />
+
+
+  <label class="headlabel"> EFFICIENCY </label>
+  <label class="headlabel"> </label>
+  <label class="headlabel"> PWM FREQ </label>
+  <label class="headlabel"> </label>
+  <label class="headlabel"> DUTYCYCLE</label><br />
+  <label class="normallabel" id="efficiency_label">94 &percnt;</label>
+  <label class="normallabel"></label>
+  <label class="normallabel" onclick="labelHit(this)" id="freq_label">40 kHz</label>
+  <label class="normallabel"></label>
+  <label class="normallabel" id="pwm_label">54 &percnt;</label><br />
+
+
+
+  <br /><br /> <br /><br />
+
+
+
+  <label class="headlabel"> MPP MODE </label>
+  <label class="headlabel"> </label>
+  <label class="headlabel"> SIMULATION </label>
+  <label class="headlabel"> </label>
+  <label class="headlabel"> LOGGING</label><br />
+
+  <br />
+
+
+
+  <label class="normallabel" onclick="labelHit(this)" id="mode_label">AUTO</label>
+  <label class="normallabel"></label>
+  <label class="normallabel" onclick="labelHit(this)" id="simulation_label">OFF</label>
+  <label class="normallabel"></label>
+  <label class="normallabel" onclick="labelHit(this)" id="logging_label">OFF</label>
+  <br /><br /><br /><br />
+
+
+  <label class="tumheadline">Technical University of Munich</label>
+  <br /><br />
+  <label class="chairheadline">Chair of Renewable and Sustainable Energy Systems</label>
+  <label class="chairheadline">(TUM SCHOOL OF ENGINEERING AND DESIGN)</label>
+  <br /><br />
+  <label class="headlabel">Version: %BUTTONPLACEHOLDER%</label>
+  <br /><br />
+
+
+
+</body>
+
+</html>
